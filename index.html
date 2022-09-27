@@ -4,68 +4,188 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Divas da Programação</title>
+  <title>Ada Lovelace</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="./src/css/style.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-  integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 </head>
 <body>
 
-    <header>
-      <nav class="navbar navbar-expand-lg bg-light fixed-top">
-        <div class="container-fluid d-flex justify-content-between">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Ada Lovelace</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Grace Hopper</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Dorothy Voughan</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link">Margaret Hamilton</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link">Katherine Johnson</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link">Novidades</a>
-              </li>
-              <li class="nav-item">
-                <button class="btn  btn-outline-secondary" type="button">Mudar Tema</button>
-              </li>
-            </ul>
+  <nav id="navigation">
+    <div class="wrapper">
+      <a href="" class="logo">
+
+      </a>
+
+      <div class="menu">
+          <ul>
+            <li><a onclick="closeMenu()" href="#">Infância</a></li>
+            <li><a onclick="closeMenu()" href="#">Juventude</a></li>
+            <li><a onclick="closeMenu()" href="#">Vida adulta</a></li>
+          </ul>
+
+          <a class="button" onclick="closeMenu()" href="#">Receba Novidades</a>
+      </div>
+
+      <button aria-expanded="false" aria-label="Abrir menu" onclick="openMenu()" class="open-menu">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10 20H30" stroke="#7d0096" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M10 12H30" stroke="#7d0096" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M18 28L30 28" stroke="#7d0096" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </button>
+      
+      <button aria-expanded="true" aria-label="Fechar menu" onclick="closeMenu()" class="close-menu">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M30 10L10 30M10 10L30 30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <section id="home">
+    
+    <div class="wrapper">
+        <header>
+          <h4>BEM-VINDE 👋</h4>
+          <h1>Ada Lovelace</h1>
+        </header>
+      
+        <div class="content">
+          <p>Conheça Ada Lovelace, uma mulher que fez história no mundo da tecnologia.</p>
+          <a href="#" class="button">Quero conhecer</a>
+        </div>
+      
+        <img src="./assets/Ada_lovelace.png"
+          alt="Ada Lovelace de lado" />
+
+        <div class="stats">
+          <div class="stat">
+            <a href="#infancia">Infância</a>
+          </div>
+        
+          <div class="stat">
+            <a href="#juventude">Juventude</a>
+          </div>
+        
+          <div class="stat">
+            <a href="#vida-adulta">Vida adulta</a>
           </div>
         </div>
-      </nav>
-    </header>
+    </div>
 
-    <section class="banner">
-      <div class="container">
-        <h1>Mulheres que fizeram história na tecnologia</h1>
-      </div>
-    </section>
+  </section>
 
-    <section class="resumo container-fluid bg-light">
-      <div class="container">
-        <h2>Ada Lovelace</h2>
-  
-        <p>Augusta Ada King, condessa de Lovelace, nasceu em Londres em 1815, mais conhecida como Ada Lovelace, foi a primeira
-        pessoa a escrever um algoritmo para ser processado por uma máquina na história da computação.</p>
-      </div>
-    </section>
+  <section id="infancia">
+    <div class="wrapper">
+      <header>
+        <h2>Infância</h2>
+      </header>
+
+      <div class="content">
+        <p>Seu pai era o poeta romântico Lord Byron, conhecido por seus exageros como ter um urso domesticado em seu quarto e por atos (incomuns para a época), como se relacionar com homens e mulheres. Sua mãe era a rica e culta Annabella Milbanke, apaixonada por matemática e pouco paciente com as maluquices do marido.</p> <br>
     
+        <p>Lord Byron bebia demais o que resultou no divórcio quando Ada tinha só 5 semanas de vida. Annabella foi mãe solo preocupada em garantir que Ada não ficasse parecida com o pai. Investiu na educação rigorosa da menina contratando os melhores professores. Acreditava que, se a filha se interessasse por matemática e ciências, se afastaria da poesia e das tendências excêntricas herdadas do pai.</p> <br>
+    
+        <p>Ada era fascinada por matemática e poesia (para desespero de sua mãe). Aos doze anos, encantou-se pela engenharia mecânica e escreveu um livro chamado Flyology (ou Voologia), com desenhos de um plano para a construção de uma máquina de voar. Ao contar para sua mãe sobre a máquina, Annabelle achou que Ada estava se desviando dos estudos e a reprimiu. Então, pediu para que Ada focasse em se tornar uma dama.</p> <br>
+      </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+      <img src="./assets/adaCrianca.png" alt="Pintura de Ada criança segurando um desenho.">
+    </div>
+  </section>
+
+  <section id="juventude">
+    <div class="wrapper">
+      <header>
+        <h2>Juventude</h2>
+      </header>
+  
+      <div class="content">
+        <p>Aos 17 anos, Ada foi apresentada à corte e passou a ser convidada para festas na cidade. Seu jeito inteligente e rápida
+        atraiu muitos solteiros, mas ela se interessou por um velho matemático chamado Charles Babage, que lhe contou sobre a
+        invenção que trabalhava há anos, a “máquina diferencial”, que fazia grandes cálculos.</p> <br>
+  
+        <p>Charles gostou da jovem, ela era uma das poucas pessoas que se interessou e entendeu suas invenções. Quando Ada conheceu
+        a máquina diferencial, viu nela muitas possibilidades que nem mesmo Charles havia pensado. O entusiasmo da jovem
+        matemática o impressionava.</p> <br>
+      </div>
+  
+      <img src="./assets/adaPintura.png" alt="Pintura da Ada Lovelace">
+    </div>
+  </section>
+
+  <section id="vida-adulta">
+    <div class="wrapper">
+      <header>
+        <h2>Vida Adulta</h2>
+      </header>
+  
+      <div class="content">
+        <p>Aos 17 anos, Ada foi apresentada à corte e passou a ser convidada para festas na cidade. Seu jeito inteligente
+          e rápida
+          atraiu muitos solteiros, mas ela se interessou por um velho matemático chamado Charles Babage, que lhe contou
+          sobre a
+          invenção que trabalhava há anos, a “máquina diferencial”, que fazia grandes cálculos.</p> <br>
+  
+        <p>Charles gostou da jovem, ela era uma das poucas pessoas que se interessou e entendeu suas invenções. Quando Ada
+          conheceu
+          a máquina diferencial, viu nela muitas possibilidades que nem mesmo Charles havia pensado. O entusiasmo da jovem
+          matemática o impressionava.</p> <br>
+      </div>
+  
+      <img src="./assets/adaTabela.png" alt="Pintura de Ada jovem ao lado de uma tabela com algoritmos.">
+    </div>
+  </section>
+
+  <footer>
+    <p>Desenvolvido por: Lara Amaral</p>
+
+    <div id="social">
+      <a href="https://www.linkedin.com/in/lara-amaral15/" target="_blank">
+        <svg width="30" height="30" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M24 0C10.7452 0 0 10.7452 0 24C0 37.2548 10.7452 48 24 48C37.2548 48 48 37.2548 48 24C48 10.7452 37.2548 0 24 0ZM11.5216 19.8778H16.9605V36.2196H11.5216V19.8778ZM17.3188 14.8227C17.2835 13.2204 16.1377 12 14.277 12C12.4164 12 11.2 13.2204 11.2 14.8227C11.2 16.3918 12.3805 17.6473 14.2064 17.6473H14.2412C16.1377 17.6473 17.3188 16.3918 17.3188 14.8227ZM30.3131 19.4941C33.8922 19.4941 36.5754 21.8303 36.5754 26.8497L36.5752 36.2196H31.1365V27.4767C31.1365 25.2807 30.3494 23.7822 28.3805 23.7822C26.8779 23.7822 25.9829 24.7924 25.5898 25.7682C25.446 26.1178 25.4107 26.605 25.4107 27.0934V36.22H19.9711C19.9711 36.22 20.0428 21.4117 19.9711 19.8783H25.4107V22.1929C26.1325 21.0802 27.4254 19.4941 30.3131 19.4941Z"
+            fill="white" />
+        </svg>
+      </a>
+
+      <a href="https://github.com/LaraAmaral15" target="_blank">
+        <svg width="30" height="30" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M24.0432 0.179932C10.8147 0.179932 0.0876465 11.0878 0.0876465 24.5445C0.0876465 35.3096 6.95165 44.4426 16.4699 47.6643C17.6672 47.8899 18.1067 47.1358 18.1067 46.4922C18.1067 45.9112 18.0845 43.9919 18.0742 41.956C11.4097 43.4299 10.0034 39.0812 10.0034 39.0812C8.9137 36.265 7.34358 35.5161 7.34358 35.5161C5.17009 34.0039 7.50742 34.035 7.50742 34.035C9.91297 34.2065 11.1796 36.5458 11.1796 36.5458C13.3162 40.2707 16.7837 39.1938 18.1507 38.5712C18.3657 36.9969 18.9866 35.9212 19.6716 35.3132C14.3508 34.6971 8.7574 32.6079 8.7574 23.2719C8.7574 20.6118 9.6932 18.4383 11.2256 16.732C10.9769 16.1179 10.1569 13.6402 11.4577 10.2841C11.4577 10.2841 13.4693 9.62928 18.0472 12.7816C19.9581 12.2418 22.0074 11.971 24.0432 11.9618C26.0791 11.971 28.13 12.2418 30.0444 12.7816C34.6167 9.62928 36.6256 10.2841 36.6256 10.2841C37.9295 13.6402 37.1091 16.1179 36.8604 16.732C38.3964 18.4383 39.3259 20.6118 39.3259 23.2719C39.3259 32.6301 33.7218 34.6906 28.3874 35.2938C29.2467 36.0499 30.0123 37.5327 30.0123 39.8059C30.0123 43.0655 29.9845 45.6893 29.9845 46.4922C29.9845 47.1406 30.4157 47.9003 31.63 47.6611C41.1431 44.4357 47.9984 35.3059 47.9984 24.5445C47.9984 11.0878 37.273 0.179932 24.0432 0.179932Z"
+            fill="white" />
+          <path
+            d="M9.16085 35.1623C9.10809 35.2838 8.92085 35.3197 8.75027 35.2366C8.57652 35.1571 8.47893 34.9921 8.53526 34.8706C8.58683 34.746 8.77447 34.7117 8.94782 34.7944C9.12197 34.8743 9.22115 35.0409 9.16085 35.1623Z"
+            fill="white" />
+          <path
+            d="M10.131 36.263C10.0168 36.3707 9.79346 36.3207 9.64192 36.1504C9.48523 35.9806 9.45587 35.7534 9.57171 35.6441C9.68953 35.5363 9.90612 35.5868 10.0632 35.7566C10.2199 35.9285 10.2505 36.1541 10.131 36.263Z"
+            fill="white" />
+          <path
+            d="M11.0757 37.6662C10.929 37.7699 10.689 37.6726 10.5406 37.456C10.3938 37.2393 10.3938 36.9795 10.5438 36.8754C10.6925 36.7713 10.929 36.8649 11.0793 37.0799C11.2257 37.2998 11.2257 37.5601 11.0757 37.6662Z"
+            fill="white" />
+          <path
+            d="M12.3698 39.0219C12.2385 39.1692 11.9588 39.1297 11.7541 38.9287C11.5446 38.7322 11.4863 38.4534 11.618 38.3062C11.7509 38.1585 12.0322 38.2001 12.2385 38.3994C12.4463 38.5955 12.5098 38.8763 12.3698 39.0219Z"
+            fill="white" />
+          <path
+            d="M14.1549 39.8091C14.097 40 13.8276 40.0867 13.5563 40.0056C13.2853 39.9221 13.108 39.6986 13.1628 39.5057C13.2191 39.3137 13.4896 39.2233 13.763 39.31C14.0335 39.3932 14.2112 39.6151 14.1549 39.8091Z"
+            fill="white" />
+          <path
+            d="M16.1154 39.9551C16.1221 40.156 15.892 40.3227 15.6072 40.3259C15.3208 40.3327 15.0891 40.1701 15.0859 39.9724C15.0859 39.7695 15.3109 39.6045 15.5973 39.5996C15.8821 39.594 16.1154 39.7554 16.1154 39.9551Z"
+            fill="white" />
+          <path
+            d="M17.9396 39.6392C17.9737 39.8353 17.7757 40.0366 17.4929 40.0899C17.2148 40.1419 16.9574 40.0209 16.9221 39.8264C16.8876 39.6255 17.0891 39.4241 17.3668 39.3721C17.65 39.3221 17.9035 39.4399 17.9396 39.6392Z"
+            fill="white" />
+        </svg>
+      </a>
+    </div>
+  </footer>
+
+  <script src="./main.js"></script>
 </body>
 </html>
