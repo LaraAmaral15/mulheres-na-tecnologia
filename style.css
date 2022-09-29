@@ -18,6 +18,12 @@
 
   --nav-height: 7.2rem;
 
+  --bg-dark: hsl(225, 5%, 17%);
+  --headline-dark-mode: hsl(273, 26%, 49%);
+  --paragraph-dark-mode: hsl(0, 2%, 90%);
+  --brand-dark: hsl(251, 17%, 68%);
+  --brand-dark-purple: hsl(271, 11%, 63%);
+
   font-size: 62.5%;
 }
 
@@ -52,13 +58,14 @@ img {
 }
 
 section {
-  padding-block: 5rem;
+  padding-block: 2rem;
 }
 
 section#infancia img, 
 section#juventude img,
 section#vida-adulta img{
   margin-block: 2.2rem;
+  max-height: 80rem;
 }
 
 section header h4 {
@@ -364,6 +371,65 @@ color: #bebebe;
   background: var(--primary-color);
 }
 
+/* DARK MODE ================================================================================================== */
+
+.dark {
+  background-color: var(--bg-dark);
+}
+
+.dark nav {
+  background-color: rgba(165, 160, 187, 0.7);
+}
+
+.dark section header h2 {
+  color: var(--headline-dark-mode);
+}
+
+.dark #home .stats {
+  background-color: var(--brand-dark-purple);
+  border: 1px solid var(--brand-light-2);
+}
+
+.dark #home .stat a {
+  color: var(--paragraph-dark-mode);
+}
+
+.dark section .content p {
+  color: var(--paragraph-dark-mode);
+}
+
+.dark #home::before {
+  background-color: var(--brand-dark);
+}
+
+.dark #home p {
+  color: var(--paragraph-dark-mode);
+}
+
+.dark #juventude {
+  background-color: var(--brand-dark-purple);
+}
+
+.dark footer {
+  background-color: var(--brand-dark);
+}
+
+.dark footer p {
+  color: var(--paragraph-dark-mode);
+}
+
+.dark footer a svg path {
+  fill: white;
+}
+
+.dark::-webkit-scrollbar-track {
+  background-color: var(--bg-dark);
+}
+
+.dark::-webkit-scrollbar {
+  width: 0.6rem;
+  background: var(--bg-dark);
+} 
 
 /* RESPONSIVO =============================================================================================*/
 
@@ -437,7 +503,7 @@ color: #bebebe;
     opacity: 0.7;
   }
 
-  nav#navigation .menu a.button {
+  nav#navigation .menu button.button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -454,7 +520,7 @@ color: #bebebe;
     text-transform: uppercase;
   }
 
-  nav#navigation .menu a.button:hover {
+  nav#navigation .menu button.button:hover {
     background-color: var(--primary-color);
     border: none;
     color: #FFF;
@@ -465,7 +531,7 @@ color: #bebebe;
     opacity: 0.6;
   }
 
-  nav#navigation.scroll .menu a.button {
+  nav#navigation.scroll .menu button.button {
     border: #FFF;
     color: #FFF;
   }
