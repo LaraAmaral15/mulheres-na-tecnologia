@@ -64,8 +64,10 @@ section {
 section#infancia img, 
 section#juventude img,
 section#vida-adulta img{
-  margin-block: 2.2rem;
   max-height: 80rem;
+  max-width: 80rem;
+  display: block;
+  margin: 2rem auto;
 }
 
 section header h4 {
@@ -133,7 +135,7 @@ ul {
 
 /* NAVEGAÇÃO ========================================   */
 
-nav {
+header nav {
   display: flex;
   background-color: rgba(238, 237, 242, 0.7);
 
@@ -147,20 +149,20 @@ nav {
   z-index: 100;
 }
 
-nav .wrapper {
+header nav .wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-nav button {
+header nav button {
   background: none;
   border: none;
   cursor: pointer;
 }
 
-nav .menu,
-nav .close-menu {
+header nav .menu,
+header nav .close-menu {
   position: fixed;
 }
 
