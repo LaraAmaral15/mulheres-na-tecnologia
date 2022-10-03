@@ -36,7 +36,7 @@ ScrollReveal({
   duration: 700
 }).reveal(`#home,
             #home img, 
-            #home .stats, 
+            #home .navigation-main, 
             #infancia,
             #infancia header,
             #infancia .content,
